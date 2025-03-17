@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -49,7 +48,7 @@ const conversations = [
       status: 'offline'
     },
     lastMessage: {
-      text: 'I reviewed your project proposal and have some suggestions. Let me know when you're free to discuss.',
+      text: "I reviewed your project proposal and have some suggestions. Let me know when you're free to discuss.",
       time: 'Yesterday',
       isRead: false,
       unreadCount: 2
@@ -65,7 +64,7 @@ const conversations = [
       status: 'away'
     },
     lastMessage: {
-      text: 'The shipyard visit is confirmed for next Tuesday at 10 AM. Don't forget to bring your ID and safety gear.',
+      text: "The shipyard visit is confirmed for next Tuesday at 10 AM. Don't forget to bring your ID and safety gear.",
       time: 'Mon',
       isRead: true,
       unreadCount: 0
@@ -97,7 +96,7 @@ const conversations = [
       status: 'offline'
     },
     lastMessage: {
-      text: 'I'd like to collaborate on the wave resistance study you mentioned. Do you have time this week to discuss the approach?',
+      text: "I'd like to collaborate on the wave resistance study you mentioned. Do you have time this week to discuss the approach?",
       time: 'Aug 25',
       isRead: true,
       unreadCount: 0
@@ -117,21 +116,21 @@ const sampleMessages = [
   {
     id: 'm2',
     senderId: 'user',
-    text: 'Thank you for reaching out! I'm working on a project related to fluid dynamics in naval vessel design and could use some guidance.',
+    text: "Thank you for reaching out! I'm working on a project related to fluid dynamics in naval vessel design and could use some guidance.",
     timestamp: '09:20 AM',
     isRead: true
   },
   {
     id: 'm3',
     senderId: '101',
-    text: 'That's an interesting area. I spent several years working on similar projects during my time with the Navy. What specific aspects are you focusing on?',
+    text: "That's an interesting area. I spent several years working on similar projects during my time with the Navy. What specific aspects are you focusing on?",
     timestamp: '09:25 AM',
     isRead: true
   },
   {
     id: 'm4',
     senderId: 'user',
-    text: 'I'm particularly interested in how computational fluid dynamics can be used to optimize hull shapes for reduced drag and improved fuel efficiency.',
+    text: "I'm particularly interested in how computational fluid dynamics can be used to optimize hull shapes for reduced drag and improved fuel efficiency.",
     timestamp: '09:30 AM',
     isRead: true
   },
@@ -156,7 +155,7 @@ const Messages = () => {
     away: 'bg-yellow-500'
   };
   
-  const handleSendMessage = (e) => {
+  const handleSendMessage = (e: React.FormEvent) => {
     e.preventDefault();
     if (messageInput.trim()) {
       // This would normally add the message to the conversation
@@ -475,3 +474,4 @@ const Messages = () => {
 };
 
 export default Messages;
+
