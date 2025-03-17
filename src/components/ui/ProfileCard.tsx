@@ -33,11 +33,11 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   return (
     <div 
       className={`glassmorphism rounded-xl overflow-hidden card-hover ${
-        featured ? 'border-naval-accent/30 bg-naval-subtle/50' : ''
+        featured ? 'border-[#2176FF]/30 bg-[#F2F5F9]/50' : ''
       } ${className}`}
     >
       {featured && (
-        <div className="bg-naval-accent text-white px-3 py-1 text-xs font-medium flex items-center justify-center">
+        <div className="bg-[#2176FF] text-white px-3 py-1 text-xs font-medium flex items-center justify-center">
           <Award className="w-3 h-3 mr-1" />
           Featured Alumni
         </div>
@@ -60,7 +60,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
           </div>
           
           <div className="flex-1">
-            <h3 className="font-display font-bold text-lg text-naval-DEFAULT">
+            <h3 className="font-display font-bold text-lg text-[#0A2463]">
               {name}
             </h3>
             <p className="text-gray-600 text-sm">
@@ -76,7 +76,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
             </p>
           </div>
           <button 
-            className="p-2 text-gray-400 hover:text-naval-DEFAULT transition-colors"
+            className="p-2 text-gray-400 hover:text-[#0A2463] transition-colors"
             aria-label="Bookmark profile"
           >
             <Bookmark className="w-5 h-5" />
@@ -86,7 +86,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         {/* Skills */}
         <div className="mt-4 flex flex-wrap gap-2">
           {skills.slice(0, 3).map((skill, index) => (
-            <Badge key={index} variant="secondary" className="text-xs bg-naval-subtle text-naval-DEFAULT">
+            <Badge key={index} variant="secondary" className="text-xs bg-[#F2F5F9] text-[#0A2463]">
               {skill}
             </Badge>
           ))}
@@ -102,13 +102,13 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
           <Link to={`/profile/${id}`} className="flex-1">
             <Button 
               variant="outline" 
-              className="w-full border-naval-DEFAULT text-naval-DEFAULT hover:bg-naval-subtle"
+              className="w-full border-[#0A2463] text-[#0A2463] hover:bg-[#F2F5F9]"
             >
               View Profile
             </Button>
           </Link>
           <Link to={`/messages/new/${id}`} className="flex-grow-0">
-            <Button className="bg-naval-DEFAULT hover:bg-naval-dark">
+            <Button className="bg-[#0A2463] hover:bg-[#051440]">
               <MessageSquare className="w-4 h-4" />
             </Button>
           </Link>
