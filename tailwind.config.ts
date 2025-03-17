@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -122,6 +121,9 @@ export default {
 			},
 			backdropBlur: {
 				'xs': '2px',
+			},
+			backgroundImage: {
+				'gradient-naval': 'linear-gradient(to right, #0A2463, #3E92CC)',
 			},
 		}
 	},

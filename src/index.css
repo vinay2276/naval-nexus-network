@@ -87,7 +87,7 @@
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-naval-DEFAULT to-naval-light bg-clip-text text-transparent;
+    @apply bg-gradient-naval bg-clip-text text-transparent;
   }
 
   .button-primary {
