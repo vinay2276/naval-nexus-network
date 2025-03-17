@@ -6,7 +6,19 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { UserCircle, Users, Calendar, GraduationCap, Briefcase, Award, ArrowRight } from 'lucide-react';
+import { 
+  UserCircle, 
+  Users, 
+  Calendar, 
+  GraduationCap, 
+  Briefcase, 
+  Award, 
+  ArrowRight,
+  Clock,
+  User,
+  Search as SearchIcon,
+  Send as SendIcon
+} from 'lucide-react';
 
 const Mentorship = () => {
   // Sample mentor data
@@ -221,13 +233,13 @@ const Mentorship = () => {
                 step: 2,
                 title: "Browse Mentors",
                 description: "Explore our directory of mentors and find professionals aligned with your aspirations.",
-                icon: <Search className="h-10 w-10 text-[#0A2463]" />
+                icon: <SearchIcon className="h-10 w-10 text-[#0A2463]" />
               },
               {
                 step: 3,
                 title: "Send Request",
                 description: "Reach out to mentors with a personalized message explaining your mentorship goals.",
-                icon: <Send className="h-10 w-10 text-[#0A2463]" />
+                icon: <SendIcon className="h-10 w-10 text-[#0A2463]" />
               },
               {
                 step: 4,
