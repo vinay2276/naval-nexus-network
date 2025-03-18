@@ -36,7 +36,7 @@ const Hero = () => {
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: '600ms' }}>
               <Link to="/register">
-                <Button size="lg" className="bg-naval-DEFAULT hover:bg-naval-dark">
+                <Button size="lg" className="bg-naval-DEFAULT hover:bg-naval-dark text-white">
                   Join the Network
                   <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
