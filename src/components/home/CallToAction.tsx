@@ -30,13 +30,13 @@ const CallToAction = () => {
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/register">
-                  <Button size="lg" className="bg-white text-naval-DEFAULT hover:bg-gray-100">
+                  <Button size="lg" className="btn-white">
                     Register Now
                     <ChevronRight className="ml-1 h-4 w-4" />
                   </Button>
                 </Link>
                 <Link to="/about">
-                  <Button variant="outline" size="lg" className="border-white bg-transparent text-white hover:bg-naval-dark">
+                  <Button variant="outline" size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-naval-DEFAULT transition-all duration-200">
                     Learn About Department
                   </Button>
                 </Link>

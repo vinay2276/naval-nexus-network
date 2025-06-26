@@ -37,13 +37,13 @@ const Hero = () => {
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: '600ms' }}>
               <Link to="/register">
-                <Button size="lg" className="bg-naval-DEFAULT hover:bg-naval-dark text-white">
+                <Button size="lg" className="btn-naval">
                   Join Our Community
                   <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
               <Link to="/dashboard">
-                <Button variant="outline" size="lg" className="border-naval-DEFAULT text-naval-DEFAULT hover:bg-naval-subtle">
+                <Button variant="outline" size="lg" className="btn-naval-outline">
                   Access Dashboard
                 </Button>
               </Link>

@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -90,19 +91,20 @@
   }
 
   .button-primary {
-    @apply px-5 py-3 bg-[#0A2463] text-white rounded-lg font-medium transition-all 
+    @apply px-5 py-3 bg-[#0A2463] text-white rounded-lg font-medium transition-all duration-200
            hover:bg-[#051440] focus:ring-2 focus:ring-[#3E92CC] focus:ring-offset-2 
-           focus:outline-none active:scale-[0.98];
+           focus:outline-none active:scale-[0.98] shadow-sm hover:shadow-md;
   }
 
   .button-secondary {
-    @apply px-5 py-3 bg-white text-[#0A2463] border border-[#0A2463] rounded-lg 
-           font-medium transition-all hover:bg-[#F2F5F9] focus:ring-2 
-           focus:ring-[#3E92CC] focus:outline-none active:scale-[0.98];
+    @apply px-5 py-3 bg-white text-[#0A2463] border-2 border-[#0A2463] rounded-lg 
+           font-medium transition-all duration-200 hover:bg-[#0A2463] hover:text-white 
+           focus:ring-2 focus:ring-[#3E92CC] focus:outline-none active:scale-[0.98]
+           shadow-sm hover:shadow-md;
   }
 
   .button-text {
-    @apply px-4 py-2 text-[#0A2463] font-medium rounded-lg transition-all 
+    @apply px-4 py-2 text-[#0A2463] font-medium rounded-lg transition-all duration-200
            hover:bg-[#F2F5F9] focus:outline-none active:scale-[0.98];
   }
 
@@ -112,7 +114,8 @@
 
   .form-input {
     @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 
-           focus:ring-[#3E92CC] focus:border-transparent outline-none transition-all;
+           focus:ring-[#3E92CC] focus:border-transparent outline-none transition-all
+           duration-200;
   }
 
   .nav-link {
@@ -124,6 +127,28 @@
 
   .nav-link-active {
     @apply text-[#0A2463] after:scale-x-100;
+  }
+
+  /* Fixed button styles for consistent visibility */
+  .btn-naval {
+    @apply bg-[#0A2463] text-white border-2 border-[#0A2463] px-4 py-2 rounded-lg 
+           font-medium transition-all duration-200 hover:bg-[#051440] hover:border-[#051440]
+           focus:ring-2 focus:ring-[#3E92CC] focus:ring-offset-2 focus:outline-none
+           active:scale-[0.98] shadow-sm hover:shadow-md;
+  }
+
+  .btn-naval-outline {
+    @apply bg-transparent text-[#0A2463] border-2 border-[#0A2463] px-4 py-2 rounded-lg 
+           font-medium transition-all duration-200 hover:bg-[#0A2463] hover:text-white
+           focus:ring-2 focus:ring-[#3E92CC] focus:ring-offset-2 focus:outline-none
+           active:scale-[0.98] shadow-sm hover:shadow-md;
+  }
+
+  .btn-white {
+    @apply bg-white text-[#0A2463] border-2 border-white px-4 py-2 rounded-lg 
+           font-medium transition-all duration-200 hover:bg-gray-100 hover:border-gray-100
+           focus:ring-2 focus:ring-[#3E92CC] focus:ring-offset-2 focus:outline-none
+           active:scale-[0.98] shadow-sm hover:shadow-md;
   }
 }
 
@@ -156,7 +181,7 @@ html {
 * {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+  transition-duration: 200ms;
 }
 
 /* Custom animation for page transitions */
