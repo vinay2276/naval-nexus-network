@@ -36,7 +36,7 @@ const CallToAction = () => {
                   </Button>
                 </Link>
                 <Link to="/about">
-                  <Button variant="outline" size="lg" className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-naval-DEFAULT transition-all duration-200">
+                  <Button variant="outline" size="lg" className="bg-transparent text-white border-2 border-white hover:bg-white hover:text-naval-DEFAULT transition-all duration-200 shadow-sm hover:shadow-md">
                     Learn About Department
                   </Button>
                 </Link>

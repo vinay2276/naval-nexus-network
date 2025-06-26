@@ -17,11 +17,11 @@ const Stat: React.FC<StatProps> = ({ icon, value, label, delay = 0 }) => {
       delay={delay}
       className="flex flex-col items-center text-center p-6"
     >
-      <div className="p-3 rounded-full bg-naval-DEFAULT text-white mb-4 w-14 h-14 flex items-center justify-center">
+      <div className="p-3 rounded-full bg-white text-naval-DEFAULT mb-4 w-14 h-14 flex items-center justify-center">
         {icon}
       </div>
-      <div className="font-display font-bold text-4xl text-gray-900 mb-2">{value}</div>
-      <div className="text-gray-600">{label}</div>
+      <div className="font-display font-bold text-4xl text-white mb-2">{value}</div>
+      <div className="text-naval-light/90">{label}</div>
     </AnimatedSection>
   );
 };
@@ -58,7 +58,7 @@ const Stats = () => {
     <section className="py-24 bg-naval-DEFAULT text-white">
       <div className="container mx-auto px-4 md:px-6">
         <AnimatedSection className="text-center mb-16">
-          <h2 className="heading-lg mb-4">Our Growing Community</h2>
+          <h2 className="heading-lg mb-4 text-white">Our Growing Community</h2>
           <p className="text-naval-light/80 max-w-2xl mx-auto text-lg">
             Join a thriving ecosystem of naval architecture and marine engineering 
             professionals making waves in the industry.

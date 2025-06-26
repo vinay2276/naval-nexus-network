@@ -13,11 +13,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* About Section */}
           <div className="space-y-4">
-            <h3 className="text-xl font-display font-bold">Naval Nexus</h3>
+            <h3 className="text-xl font-display font-bold text-white">Naval Architecture & Marine Engineering</h3>
             <p className="text-gray-300 leading-relaxed">
-              Connecting students and alumni from the Naval Architecture and Marine 
-              Engineering Department of Andhra University for collaboration, mentorship, 
-              and career growth.
+              Official platform of the Naval Architecture and Marine Engineering 
+              Department, Andhra University - connecting students, alumni, and faculty 
+              for academic excellence and professional growth.
             </p>
             <div className="flex space-x-4 pt-2">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -37,7 +37,7 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-xl font-display font-bold">Quick Links</h3>
+            <h3 className="text-xl font-display font-bold text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-white transition-colors">
@@ -45,55 +45,55 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/directory" className="text-gray-300 hover:text-white transition-colors">
-                  Alumni Directory
+                <Link to="/dashboard" className="text-gray-300 hover:text-white transition-colors">
+                  Dashboard
                 </Link>
               </li>
               <li>
-                <Link to="/mentorship" className="text-gray-300 hover:text-white transition-colors">
-                  Mentorship Program
+                <Link to="/blogs" className="text-gray-300 hover:text-white transition-colors">
+                  Blogs
                 </Link>
               </li>
               <li>
-                <Link to="/resources" className="text-gray-300 hover:text-white transition-colors">
-                  Resources
+                <Link to="/study-resources" className="text-gray-300 hover:text-white transition-colors">
+                  Study Resources
                 </Link>
               </li>
               <li>
                 <Link to="/events" className="text-gray-300 hover:text-white transition-colors">
-                  Events & Workshops
+                  Events
                 </Link>
               </li>
             </ul>
           </div>
           
-          {/* Resources */}
+          {/* Department */}
           <div className="space-y-4">
-            <h3 className="text-xl font-display font-bold">Resources</h3>
+            <h3 className="text-xl font-display font-bold text-white">Department</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/resources/technical-papers" className="text-gray-300 hover:text-white transition-colors">
-                  Technical Papers
+                <Link to="/about" className="text-gray-300 hover:text-white transition-colors">
+                  About Department
                 </Link>
               </li>
               <li>
-                <Link to="/resources/job-board" className="text-gray-300 hover:text-white transition-colors">
-                  Job Board
+                <Link to="/faculty" className="text-gray-300 hover:text-white transition-colors">
+                  Faculty Directory
                 </Link>
               </li>
               <li>
-                <Link to="/resources/project-hub" className="text-gray-300 hover:text-white transition-colors">
-                  Project Hub
+                <Link to="/clubs" className="text-gray-300 hover:text-white transition-colors">
+                  Clubs & Organizations
                 </Link>
               </li>
               <li>
-                <Link to="/resources/industry-standards" className="text-gray-300 hover:text-white transition-colors">
-                  Industry Standards
+                <Link to="/news" className="text-gray-300 hover:text-white transition-colors">
+                  Latest News
                 </Link>
               </li>
               <li>
-                <Link to="/resources/tutorials" className="text-gray-300 hover:text-white transition-colors">
-                  Tutorials & Guides
+                <Link to="/feedback" className="text-gray-300 hover:text-white transition-colors">
+                  Feedback
                 </Link>
               </li>
             </ul>
@@ -101,7 +101,7 @@ const Footer = () => {
           
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-display font-bold">Contact Us</h3>
+            <h3 className="text-xl font-display font-bold text-white">Contact Us</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-naval-light flex-shrink-0 mt-0.5" />
@@ -117,8 +117,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-naval-light flex-shrink-0" />
-                <a href="mailto:contact@navalnexus.edu" className="text-gray-300 hover:text-white transition-colors">
-                  contact@navalnexus.edu
+                <a href="mailto:navalarch@andhrauniversity.edu.in" className="text-gray-300 hover:text-white transition-colors">
+                  navalarch@andhrauniversity.edu.in
                 </a>
               </li>
             </ul>
@@ -130,7 +130,7 @@ const Footer = () => {
       <div className="border-t border-naval-dark/50">
         <div className="container mx-auto px-4 md:px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
-            <p>© {currentYear} Naval Nexus Network. All rights reserved.</p>
+            <p>© {currentYear} Naval Architecture & Marine Engineering Department, Andhra University. All rights reserved.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
@@ -138,8 +138,8 @@ const Footer = () => {
               <Link to="/terms" className="hover:text-white transition-colors">
                 Terms of Service
               </Link>
-              <Link to="/sitemap" className="hover:text-white transition-colors">
-                Sitemap
+              <Link to="/contact" className="hover:text-white transition-colors">
+                Contact
               </Link>
             </div>
           </div>
