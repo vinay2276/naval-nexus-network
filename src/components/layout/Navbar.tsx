@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
-import { Menu, X, User, LogIn } from 'lucide-react';
+import { Menu, X, User, LogIn, Bell } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,10 +30,13 @@ const Navbar = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Directory', path: '/directory' },
-    { name: 'Mentorship', path: '/mentorship' },
-    { name: 'Resources', path: '/resources' },
-    { name: 'Events', path: '/events' },
+    { name: 'Dashboard', path: '/dashboard' },
+    { name: 'Blogs', path: '/blogs' },
+    { name: 'Study Resources', path: '/study-resources' },
+    { name: 'Clubs', path: '/clubs' },
+    { name: 'Events', path: '/event-calendar' },
+    { name: 'News', path: '/news' },
+    { name: 'Faculty', path: '/faculty' },
     { name: 'About', path: '/about' },
   ];
 
@@ -49,19 +52,19 @@ const Navbar = () => {
         {/* Logo */}
         <Link 
           to="/" 
-          className="flex items-center space-x-2 text-naval-DEFAULT font-display font-bold text-xl"
+          className="flex items-center space-x-2 text-naval-DEFAULT font-display font-bold text-lg"
         >
-          <span className="text-naval-accent">Naval</span>
-          <span>Nexus</span>
+          <span className="text-naval-accent">Naval Arch</span>
+          <span>& Marine Eng</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-1">
+        <div className="hidden lg:flex items-center space-x-1">
           {navLinks.map((link) => (
             <Link
               key={link.path}
               to={link.path}
-              className={`nav-link ${isActive(link.path) ? 'nav-link-active' : ''}`}
+              className={`nav-link text-sm ${isActive(link.path) ? 'nav-link-active' : ''}`}
             >
               {link.name}
             </Link>
@@ -70,6 +73,9 @@ const Navbar = () => {
 
         {/* Auth Buttons - Desktop */}
         <div className="hidden md:flex items-center space-x-4">
+          <Button variant="ghost" size="sm">
+            <Bell className="w-4 h-4" />
+          </Button>
           <Link to="/login">
             <Button variant="outline" size="sm" className="group">
               <LogIn className="w-4 h-4 mr-2 group-hover:animate-pulse" />
@@ -79,7 +85,7 @@ const Navbar = () => {
           <Link to="/register">
             <Button size="sm" className="group">
               <User className="w-4 h-4 mr-2 group-hover:animate-pulse" />
-              Sign up
+              Register
             </Button>
           </Link>
         </div>
@@ -96,7 +102,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       <div 
-        className={`md:hidden absolute w-full bg-white shadow-nav transition-all duration-300 ease-in-out overflow-hidden ${
+        className={`lg:hidden absolute w-full bg-white shadow-nav transition-all duration-300 ease-in-out overflow-hidden ${
           isMobileMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
@@ -105,7 +111,7 @@ const Navbar = () => {
             <Link
               key={link.path}
               to={link.path}
-              className={`py-3 px-4 rounded-lg ${
+              className={`py-3 px-4 rounded-lg text-sm ${
                 isActive(link.path) 
                   ? 'bg-naval-subtle text-naval-DEFAULT font-medium' 
                   : 'text-gray-700 hover:bg-gray-50'
@@ -119,7 +125,7 @@ const Navbar = () => {
               Log in
             </Link>
             <Link to="/register" className="button-primary w-full flex justify-center">
-              Sign up
+              Register
             </Link>
           </div>
         </div>

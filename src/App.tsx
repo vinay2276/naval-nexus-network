@@ -15,6 +15,16 @@ import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import About from "./pages/About";
+import Dashboard from "./pages/Dashboard";
+import Blogs from "./pages/Blogs";
+import StudyResources from "./pages/StudyResources";
+import Clubs from "./pages/Clubs";
+import EventCalendar from "./pages/EventCalendar";
+import Feedback from "./pages/Feedback";
+import News from "./pages/News";
+import Faculty from "./pages/Faculty";
+import Contact from "./pages/Contact";
+import Admin from "./pages/Admin";
 
 const queryClient = new QueryClient();
 
@@ -26,7 +36,17 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/profile/:id" element={<Profile />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/study-resources" element={<StudyResources />} />
+          <Route path="/clubs" element={<Clubs />} />
+          <Route path="/event-calendar" element={<EventCalendar />} />
+          <Route path="/feedback" element={<Feedback />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/faculty" element={<Faculty />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/messages" element={<Messages />} />
           <Route path="/mentorship" element={<Mentorship />} />
           <Route path="/events" element={<Events />} />

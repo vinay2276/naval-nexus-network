@@ -30,38 +30,38 @@ const Features = () => {
   const features = [
     {
       icon: <Users className="h-6 w-6" />,
-      title: "Alumni Network",
-      description: "Connect with graduates working in leading maritime companies worldwide.",
+      title: "Student & Alumni Network",
+      description: "Connect with current students and accomplished alumni working in leading maritime organizations.",
       delay: 100,
     },
     {
-      icon: <Award className="h-6 w-6" />,
-      title: "Mentorship",
-      description: "Gain guidance from experienced professionals in your field of interest.",
+      icon: <BookOpen className="h-6 w-6" />,
+      title: "Study Resources",
+      description: "Access lecture notes, past papers, textbooks, and technical resources shared by faculty and peers.",
       delay: 200,
     },
     {
-      icon: <Briefcase className="h-6 w-6" />,
-      title: "Job Opportunities",
-      description: "Access exclusive job postings and internships from industry partners.",
+      icon: <MessageSquare className="h-6 w-6" />,
+      title: "Blogs & Experiences",
+      description: "Share internship experiences, career insights, and academic knowledge through our blogging platform.",
       delay: 300,
     },
     {
-      icon: <BookOpen className="h-6 w-6" />,
-      title: "Resource Library",
-      description: "Access technical papers, case studies, and industry standards.",
+      icon: <Award className="h-6 w-6" />,
+      title: "Clubs & Organizations",
+      description: "Join departmental clubs, participate in technical societies, and lead student initiatives.",
       delay: 400,
     },
     {
       icon: <Calendar className="h-6 w-6" />,
-      title: "Events & Workshops",
-      description: "Participate in industry workshops, seminars, and networking events.",
+      title: "Events & Seminars",
+      description: "Stay updated on departmental events, guest lectures, workshops, and academic conferences.",
       delay: 500,
     },
     {
-      icon: <MessageSquare className="h-6 w-6" />,
-      title: "Discussion Forums",
-      description: "Engage in technical discussions and knowledge sharing with peers.",
+      icon: <Briefcase className="h-6 w-6" />,
+      title: "Latest Industry News",
+      description: "Stay informed with the latest developments in naval architecture, marine engineering, and maritime industry.",
       delay: 600,
     },
   ];
@@ -71,14 +71,14 @@ const Features = () => {
       <div className="container mx-auto px-4 md:px-6">
         <AnimatedSection className="text-center mb-16">
           <span className="text-sm font-medium text-naval-accent uppercase tracking-wider">
-            Our Platform
+            Department Features
           </span>
           <h2 className="heading-lg mt-2 mb-4">
-            Discover What We Offer
+            Everything You Need for Academic Success
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto text-lg">
-            Our platform provides everything you need to advance your career in 
-            naval architecture and marine engineering.
+            Our comprehensive platform supports every aspect of your academic 
+            journey and professional development in naval architecture and marine engineering.
           </p>
         </AnimatedSection>
         

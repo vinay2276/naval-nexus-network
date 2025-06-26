@@ -17,27 +17,27 @@ const CallToAction = () => {
           <div className="relative z-10 py-16 px-8 md:px-16 flex flex-col items-center text-center">
             <AnimatedSection animation="fade-up">
               <span className="text-sm font-medium text-naval-light uppercase tracking-wider">
-                Join Our Community
+                Join Our Department
               </span>
               <h2 className="heading-lg mt-3 mb-6 text-white">
-                Ready to Connect, Learn, and Grow?
+                Ready to Be Part of Our Academic Community?
               </h2>
               <p className="text-naval-light/80 max-w-2xl mx-auto text-lg mb-8">
-                Whether you're a student looking for mentorship or an alumnus wanting 
-                to give back, Naval Nexus Network provides the platform for meaningful 
-                connections and professional growth.
+                Whether you're a current student seeking resources and connections, 
+                an alumnus wanting to give back, or faculty looking to engage with 
+                the community - our platform brings everyone together.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link to="/register">
                   <Button size="lg" className="bg-white text-naval-DEFAULT hover:bg-gray-100">
-                    Join the Network
+                    Register Now
                     <ChevronRight className="ml-1 h-4 w-4" />
                   </Button>
                 </Link>
                 <Link to="/about">
                   <Button variant="outline" size="lg" className="border-white bg-transparent text-white hover:bg-naval-dark">
-                    Learn More
+                    Learn About Department
                   </Button>
                 </Link>
               </div>

@@ -25,25 +25,26 @@ const Hero = () => {
             </div>
             
             <h1 className="mt-6 heading-xl animate-fade-up" style={{ animationDelay: '200ms' }}>
-              <span className="text-gradient">Naval Nexus</span> <br />
-              <span>Network</span>
+              <span className="text-gradient">Naval Architecture</span> <br />
+              <span>& Marine Engineering</span>
             </h1>
             
             <p className="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 animate-fade-up" style={{ animationDelay: '400ms' }}>
-              Connecting students and alumni from the Naval Architecture and Marine 
-              Engineering Department for collaboration, mentorship, and career growth.
+              Welcome to the official platform of the Naval Architecture and Marine 
+              Engineering Department - connecting students, alumni, and faculty for 
+              academic excellence and professional growth.
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-up" style={{ animationDelay: '600ms' }}>
               <Link to="/register">
                 <Button size="lg" className="bg-naval-DEFAULT hover:bg-naval-dark text-white">
-                  Join the Network
+                  Join Our Community
                   <ChevronRight className="ml-1 h-4 w-4" />
                 </Button>
               </Link>
-              <Link to="/directory">
+              <Link to="/dashboard">
                 <Button variant="outline" size="lg" className="border-naval-DEFAULT text-naval-DEFAULT hover:bg-naval-subtle">
-                  Explore Directory
+                  Access Dashboard
                 </Button>
               </Link>
             </div>
@@ -59,8 +60,8 @@ const Hero = () => {
                 <div className="text-sm text-gray-600">Students</div>
               </div>
               <div className="text-center p-3 rounded-lg bg-white/80 backdrop-blur-sm shadow-sm">
-                <div className="font-display font-bold text-2xl text-naval-DEFAULT">150+</div>
-                <div className="text-sm text-gray-600">Mentors</div>
+                <div className="font-display font-bold text-2xl text-naval-DEFAULT">30+</div>
+                <div className="text-sm text-gray-600">Faculty</div>
               </div>
             </div>
           </div>
@@ -70,20 +71,20 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-naval-DEFAULT/5 rounded-3xl transform rotate-3"></div>
               <img 
-                src="https://images.unsplash.com/photo-1611505908502-5b67e53e3a76?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
-                alt="Naval Architecture Students" 
+                src="https://images.unsplash.com/photo-1581092918484-8313b0b2e8b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                alt="Naval Architecture Department" 
                 className="relative z-10 rounded-3xl shadow-elevation object-cover w-full h-[400px]"
               />
               
               {/* Floating badges */}
               <div className="absolute -top-6 -right-6 z-20 glassmorphism px-4 py-3 rounded-xl flex items-center animate-float shadow-soft">
                 <Users className="h-5 w-5 text-naval-DEFAULT mr-2" />
-                <span className="font-medium text-naval-DEFAULT">Alumni Network</span>
+                <span className="font-medium text-naval-DEFAULT">Department Community</span>
               </div>
               
               <div className="absolute -bottom-6 -left-6 z-20 glassmorphism px-4 py-3 rounded-xl flex items-center animate-float shadow-soft" style={{ animationDelay: '1s' }}>
                 <Briefcase className="h-5 w-5 text-naval-DEFAULT mr-2" />
-                <span className="font-medium text-naval-DEFAULT">Career Opportunities</span>
+                <span className="font-medium text-naval-DEFAULT">Industry Excellence</span>
               </div>
             </div>
           </div>
